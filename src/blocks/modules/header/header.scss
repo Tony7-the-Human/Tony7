@@ -1,0 +1,45 @@
+.header {
+    max-width: 1440px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #31302f;
+    &-item {
+        display: flex;
+    }
+    &__mail {
+        color: $white;
+        text-decoration: none;
+        transition: .3s ease;
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+.logo {
+    font-family: 'Frijole', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: $blue;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+        margin-right: 15px;
+        list-style-type: none;
+    }
+    &__link {
+        color: $white;
+        text-decoration: none;
+        transition: .3s ease;
+        &:hover {
+            color: $blue;
+        }
+    }
+}

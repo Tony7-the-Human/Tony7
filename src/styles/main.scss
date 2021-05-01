@@ -1,0 +1,26 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    color: $white;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #31302f;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
