@@ -34,12 +34,23 @@
 <body>
     @@include("../blocks/modules/header/header.html")
     <main>
-        <div class="wrapper">
-            <h1>Hello World!</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, omnis!</p>
+        <section class="section-hero">
+            <div class="wrapper section-container">
+                <div class="hero">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            <span class="hero__subtitle">Привет! Нужен <span class="hero__subtitle--item">сайт</span>?</span> Я решу эту <span class="hero__subtitle--item">проблему</span> за Вас!
+                        </h1>
+                        <p class="hero__description">меня зовут Антон, я веб-разработчик. <br>Занимаюсь созданием веб-сайтов и e-mail писем, <br>делаю валидную, семантическую, а также адаптивную и кроссбраузерную верстку по готовым макетам</p>
+                        <a href="" class="btn btn4">Мои работы</a>
+                    </div>
+                </div>
+                <div class="hero">
+                    <img class="hero__img ibg" src="../img/main-img.png" alt="" class="img">
+                </div>
 
-            <a href="" class="btn btn4">Hover Me</a>
-        </div>
+            </div>
+        </section>
     </main>
 
     @@include("../blocks/modules/footer/footer.html")

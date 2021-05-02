@@ -21,9 +21,19 @@
 
 .logo {
     font-family: 'Frijole', cursive;
+    &__link {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 400;
+        color: $blue;
+    }
+}
+
+.logo p>span {
+    font-family: 'Frijole', cursive;
     font-size: 24px;
     font-weight: 400;
-    color: $blue;
+    color: $gold;
 }
 
 .nav {
@@ -40,6 +50,7 @@
         transition: .3s ease;
         &:hover {
             color: $blue;
+            border-bottom: 1px solid $blue;
         }
     }
 }
