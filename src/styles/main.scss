@@ -163,12 +163,16 @@ body {
 
 .columns__column {
     padding: 0px 8px;
-    flex: 0 1 48%;
+    flex: 0 1 100%;
     margin-bottom: 8px;
     &__item {}
 }
 
 .item {
+    &__link {
+        text-decoration: none;
+        color: $white;
+    }
     &__row {
         display: flex;
         align-items: flex-start;
@@ -176,13 +180,27 @@ body {
         border-radius: 5px;
         background-color: #575757;
         margin-bottom: 8px;
+        transition: 1s all ease;
+        &:hover {
+            background-color: $blue;
+        }
     }
     &__image {
         flex: 0 0 370px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
         &--img {
-            max-width: 370px;
+            max-width: 100%;
             vertical-align: middle;
             padding: 5px;
+        }
+    }
+    &__image img {
+        transition: 1s;
+        display: block;
+        &:hover {
+            transform: scale(1.2);
         }
     }
     &__body {
@@ -193,6 +211,7 @@ body {
         margin-top: 5px;
         margin-bottom: 15px;
         text-align: center;
+        line-height: 1.4;
         &--colorized {
             color: $gold;
         }
