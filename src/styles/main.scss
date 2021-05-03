@@ -34,7 +34,7 @@ body {
 
 .section-hero {
     margin-top: 180px;
-    margin-bottom: 300px;
+    margin-bottom: 250px;
 }
 
 .hero {
@@ -136,4 +136,69 @@ body {
 
 .btn4:hover::before {
     height: 380%;
+}
+
+.section-portfolio {
+    margin-bottom: 150px;
+}
+
+.portfolio {
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__description {
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: left;
+    }
+}
+
+.columns__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px -8px;
+}
+
+.columns__column {
+    padding: 0px 8px;
+    flex: 0 1 48%;
+    margin-bottom: 8px;
+    &__item {}
+}
+
+.item {
+    &__row {
+        display: flex;
+        align-items: flex-start;
+        border: 2px solid #575757;
+        border-radius: 5px;
+        background-color: #575757;
+        margin-bottom: 8px;
+    }
+    &__image {
+        flex: 0 0 370px;
+        &--img {
+            max-width: 370px;
+            vertical-align: middle;
+            padding: 5px;
+        }
+    }
+    &__body {
+        flex: 1 1 auto;
+        padding: 0px 7px 0px 7px;
+    }
+    &__title {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        text-align: center;
+        &--colorized {
+            color: $gold;
+        }
+    }
+    &__text {
+        text-align: center;
+        line-height: 1.4;
+    }
 }

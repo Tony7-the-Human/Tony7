@@ -34,11 +34,11 @@
 <body>
     @@include("../blocks/modules/header/header.html")
     <main>
-        <section class="section-hero">
+        <section id="top" class="section-hero">
             <div class="wrapper section-container">
                 <div class="hero">
                     <div class="hero__text">
-                        <h1 class="hero__title">
+                        <h1 class="hero__title title">
                             <span class="hero__subtitle">Привет! Нужен <span class="hero__subtitle--item">сайт</span>?</span> Я решу эту <span class="hero__subtitle--item">проблему</span> за Вас!
                         </h1>
                         <p class="hero__description">меня зовут Антон, я веб-разработчик. <br>Занимаюсь созданием веб-сайтов и e-mail писем, <br>делаю валидную, семантическую, а также адаптивную и кроссбраузерную верстку по готовым макетам</p>
@@ -50,9 +50,74 @@
                 </div>
             </div>
         </section>
-        <section class="section-portfolio">
+        <section id="portfolio" class="section-portfolio">
             <div class="wrapper">
-                <div class="row">
+                <h2 class="portfolio__title title">Мои работы</h2>
+                <p class="portfolio__description">В данном блоке можно ознакомиться с моими последними работами</p>
+                <div class="columns__row">
+                    <div class="columns__column">
+                        <div class="columns__item item">
+                            <div class="item__row">
+                                <div class="item__image">
+                                    <img class="item__image--img ibg" src="../img/promo/flowers-promo.jpg" alt="Flowers-promo">
+                                </div>
+                                <div class="item__body">
+                                    <div class="item__title">
+                                        <h3>Интернет-магазин<br><span class="item__title--colorized">"Flowers-Shop"</span></h3>
+                                    </div>
+                                    <div class="item__text">Интернет-магазин цветов с доставкой по всей России.<br>Первая в России экскюзивная доставка цветов для людей, которые ценят уникальность</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns__column">
+                        <div class="columns__item item">
+                            <div class="item__row">
+                                <div class="item__image">
+                                    <img class="item__image--img" src="../img/promo/organic-promo.jpg" alt="Flowers-promo">
+                                </div>
+                                <div class="item__body">
+                                    <div class="item__title">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                    </div>
+                                    <div class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, velit?</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns__column">
+                        <div class="columns__item item">
+                            <div class="item__row">
+                                <div class="item__image">
+                                    <img class="item__image--img ibg" src="../img/promo/vector-promo.jpg" alt="Flowers-promo">
+                                </div>
+                                <div class="item__body">
+                                    <div class="item__title">
+                                        <h3>Сайт-визитка<br><span class="item__title--colorized">"Vector the Robot"</span></h3>
+                                    </div>
+                                    <div class="item__text">Одностраничный сайт-визитка, знакомящий посетителя о роботе по имени Vector от компании Anki.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns__column">
+                        <div class="columns__item item">
+                            <div class="item__row">
+                                <div class="item__image">
+                                    <img class="item__image--img ibg" src="../img/promo/homefor-promo.jpg" alt="Flowers-promo">
+                                </div>
+                                <div class="item__body">
+                                    <div class="item__title">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                    </div>
+                                    <div class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, velit?</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
