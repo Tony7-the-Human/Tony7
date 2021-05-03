@@ -6,10 +6,68 @@
     align-items: center;
     margin: 0 auto;
     background-color: #31302f;
+    margin-bottom: 50px;
+}
+
+.logo {
+    &__text {
+        font-family: 'Montserrat Alternates', sans-serif;
+        display: block;
+        font-size: 12px;
+        margin-top: -8px;
+    }
 }
 
 .footer-nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer-item {
+    &__text {
+        text-align: center;
+    }
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    // .footer-social__item
+    &__item {
+        margin-right: 10px;
+        margin-left: 18px;
+    }
+    // .footer-social__link
+    &__link {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #575757;
+        background-color: #575757;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+        transition: .3s ease;
+        &:hover {
+            background-color: #05a4fa;
+            border: 1px solid #05a4fa;
+        }
+    }
+    // .footer-social__vk
+    &__vk {
+        background-size: 30px 30px;
+        background-image: url(../../../img/vk.svg);
+    }
+    &__telegram {
+        background-size: 28px 28px;
+        background-image: url(../../../img/telegram.svg);
+    }
+    &__mail {
+        background-size: 30px 30px;
+        background-image: url(../../../img/mail.svg);
+    }
 }

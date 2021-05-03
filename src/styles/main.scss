@@ -9,6 +9,14 @@
     font-size: 16px;
 }
 
+hr {
+    background-color: #575757;
+    border-image: #000;
+    margin-bottom: 30px;
+    -moz-border-image: -moz-linear-gradient(top left, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    -webkit-border-image: -webkit-linear-gradient(top left, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
 body {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
@@ -19,7 +27,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1470px;
+    max-width: 1480px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -38,7 +46,7 @@ body {
 }
 
 .hero {
-    max-width: 750px;
+    flex: 0 1 48%;
     &__title {
         position: relative;
         font-size: 42px;
@@ -66,7 +74,7 @@ body {
         display: block;
         font-size: 32px;
         padding-bottom: 14px;
-        &--item {
+        &--gold {
             color: $gold;
         }
     }
@@ -77,8 +85,7 @@ body {
         text-align: left;
     }
     &__img {
-        width: 100%;
-        height: 100%;
+        width: 640px;
     }
 }
 
@@ -103,11 +110,11 @@ body {
     position: relative;
     display: block;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     font-family: 'Montserrat Alternates', sans-serif;
     text-decoration: none;
-    width: 110px;
+    width: 170px;
     text-align: center;
     border: 2px solid $blue;
     padding: 14px 44px;
@@ -131,7 +138,7 @@ body {
 .btn4::before {
     width: 100%;
     height: 0%;
-    transform: translate(-50%, -50%) rotate(-35deg);
+    transform: translate(-50%, -50%) rotate(-25deg);
 }
 
 .btn4:hover::before {
@@ -144,10 +151,30 @@ body {
 
 .portfolio {
     &__title {
-        margin-bottom: 20px;
+        margin-bottom: 45px;
+        font-size: 32px;
+        position: relative;
+        &::before {
+            content: '<h2>';
+            position: absolute;
+            display: block;
+            font-size: 14px;
+            color: $gray;
+            top: -24px;
+            left: -2px;
+        }
+        &::after {
+            content: '</h2>';
+            position: absolute;
+            display: block;
+            font-size: 14px;
+            color: $gray;
+            top: 45px;
+            left: -3px;
+        }
     }
     &__description {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         font-size: 18px;
         line-height: 1.8;
         text-align: left;
@@ -165,7 +192,6 @@ body {
     padding: 0px 8px;
     flex: 0 1 100%;
     margin-bottom: 8px;
-    &__item {}
 }
 
 .item {
@@ -186,7 +212,7 @@ body {
         }
     }
     &__image {
-        flex: 0 0 370px;
+        flex: 0 0 400px;
         position: relative;
         display: inline-block;
         overflow: hidden;
@@ -209,15 +235,19 @@ body {
     }
     &__title {
         margin-top: 5px;
-        margin-bottom: 15px;
         text-align: center;
         line-height: 1.4;
         &--colorized {
+            font-size: 34px;
+            color: $gold;
+        }
+        &--gold {
             color: $gold;
         }
     }
     &__text {
         text-align: center;
         line-height: 1.4;
+        padding: 15px 5px 5px 5px;
     }
 }
