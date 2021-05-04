@@ -1,11 +1,15 @@
 <header class="header">
+
+
+
     <div class="header-item">
         <div class="logo">
             <a class="logo__link" href="#" alt="Logo">
-                <p>Tony <span>the</span> Human</p>
+                <p class="logo__text--sizing">Tony <span>the</span> Human</p>
             </a>
         </div>
     </div>
+
     <div class="header-item">
         <nav>
             <ul class="nav">
@@ -16,4 +20,15 @@
         </nav>
         <!-- <a class="header__mail" href="mailto:mrfox88@yandex.ru">mrfox88@yandex.ru</a> -->
     </div>
+    <button type="button" class="header__menu" style="cursor:pointer" onclick="openNav()"></button>
+    <!-- mobile menu -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="overlay-content">
+            <li class="nav__item"><a class="nav__link" href="#">Обо мне</a></li>
+            <li class="nav__item"><a class="nav__link" href="#portfolio">Мои работы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+        </div>
+    </div>
+    <!-- /mobile menu -->
 </header>
