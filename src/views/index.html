@@ -59,7 +59,7 @@
                 <div class="columns__row">
                     <div class="columns__column">
                         <div class="columns__item item">
-                            <a href="https://tony7-the-human.github.io/flowers/" class="item__link" target="_blank">
+                            <a href="../../pages/projects-flowers.html" class="item__link" target="_blank">
                                 <div class="item__row">
                                     <div class="item__image">
                                         <img class="item__image--img ibg" src="../img/promo/flowers-promo.jpg" alt="Flowers-promo">
@@ -77,14 +77,14 @@
 
                     <div class="columns__column">
                         <div class="columns__item item">
-                            <a href="https://tony7-the-human.github.io/organic/" class="item__link" target="_blank">
+                            <a href="../../pages/projects-healthly.html" class="item__link" target="_blank">
                                 <div class="item__row">
                                     <div class="item__image">
                                         <img class="item__image--img ibg" src="../img/promo/organic-promo.jpg" alt="Healthy food">
                                     </div>
                                     <div class="item__body">
                                         <div class="item__title">
-                                            <h4>Интернет-магазин<br><span class="item__title--colorized">"Healthy food"</span></h4>
+                                            <h4>Интернет-магазин<br><span class="item__title--colorized">"Healthly food"</span></h4>
                                         </div>
                                         <div class="item__text">Сеть магазинов полезных продуктов питания, производство которых основано на принципах и стандартах органического чистых продуктов</div>
                                     </div>
@@ -96,7 +96,7 @@
 
                     <div class="columns__column">
                         <div class="columns__item item">
-                            <a href="https://tony7-the-human.github.io/CV/" class="item__link" target="_blank">
+                            <a href="../../pages/projects-cv.html" class="item__link" target="_blank">
                                 <div class="item__row">
                                     <div class="item__image">
                                         <img class="item__image--img ibg" src="../img/promo/vector-promo.jpg" alt="Vector the Robot">
@@ -115,7 +115,7 @@
 
                     <div class="columns__column">
                         <div class="columns__item item">
-                            <a href="https://tony7-the-human.github.io/homefor/" class="item__link" target="_blank">
+                            <a href="../../pages/projects-homefor.html" class="item__link" target="_blank">
                                 <div class="item__row">
                                     <div class="item__image">
                                         <img class="item__image--img ibg" src="../img/promo/homefor-promo.jpg" alt="Homefor">
@@ -138,9 +138,10 @@
     <hr class="line"> @@include("../blocks/modules/footer/footer.html")
 
 
+
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
-
+    <script src="https://kit.fontawesome.com/84341a2efd.js" crossorigin="anonymous"></script>
     <script>
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
@@ -149,6 +150,27 @@
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
         }
+    </script>
+    <script>
+        const clc = document.querySelector('.cancel');
+        const arr = document.querySelector('.arr_container');
+        const left_container = document.querySelector('.left_container');
+
+        arr.addEventListener('click', () => {
+            arr.classList.add('active_arr');
+            if (left_container.classList.contains('off')) {
+                left_container.classList.remove('off');
+                left_container.classList.add('active');
+            }
+        });
+
+        clc.addEventListener('click', () => {
+            arr.classList.remove('active_arr');
+            if (left_container.classList.contains('active')) {
+                left_container.classList.remove('active');
+                left_container.classList.add('off');
+            }
+        });
     </script>
 </body>
 
