@@ -270,7 +270,7 @@
     height: 100%;
     background: #0f2027;
     border-radius: 23px;
-    padding: 40px 0 0 20px;
+    padding: 34px 0 0 17px;
     transition: all .4s;
 }
 
@@ -299,12 +299,13 @@
 }
 
 .left_container p {
-    margin-bottom: 35px;
-    font-size: 20px;
+    padding-right: 16px;
+    font-size: 22px;
+    text-align: center;
 }
 
 .off {
-    transform: translate(-80%, -80%) rotate(90deg);
+    transform: translate(-82%, -72%) rotate(90deg);
 }
 
 .active {
