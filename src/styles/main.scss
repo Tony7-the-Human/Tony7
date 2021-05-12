@@ -989,3 +989,42 @@ body {
         margin-top: 30px;
     }
 }
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    &__link {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #31302f;
+        background-color: #31302f;
+        box-shadow: 0 10px 20px black;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+        transition: .3s ease;
+        &:hover {
+            background-color: #05a4fa;
+            border: 1px solid #05a4fa;
+        }
+    }
+    &__vk {
+        background-size: 30px 30px;
+        background-image: url(../../../img/vk.svg);
+    }
+    &__telegram {
+        background-size: 28px 28px;
+        background-image: url(../../../img/telegram.svg);
+    }
+    &__mail {
+        background-size: 30px 30px;
+        background-image: url(../../../img/mail.svg);
+    }
+    @media (max-width: 990px) {
+        justify-content: center;
+    }
+}
